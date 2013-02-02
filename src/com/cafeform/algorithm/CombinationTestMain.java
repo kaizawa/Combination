@@ -6,22 +6,21 @@ import java.util.List;
 /**
  * Combination
  */
-public class CombinationTestMain
-{
-	public static void main(String args[]){
-		new CombinationTestMain().start();
-	}
+public class CombinationTestMain {
 
-	private void start()
-	{
-		int num = 2;
-		List<String> list = Arrays.asList("a", "b", "c", "d", "e");
-		List<List<String>> result;
+    public static void main(String args[]) {
+        new CombinationTestMain().start();
+    }
 
-		Combination combination = new Combination(list, num);
-		result = combination.getResult();
+    private void start() {
+        int num = 2;
+        List<String> list = Arrays.asList("a", "b", "c", "d", "e");
+        List<List<String>> result;
 
-		System.out.println("Count: " + result.size());
-		System.out.println(result);
-	}
+        Combination combination = new Combination(list, num);
+        result = combination.getResult();
+
+        System.out.println("Count: " + result.size());
+        System.out.println(result);
+    }
 }
